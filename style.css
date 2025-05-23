@@ -57,7 +57,16 @@ body {
     overflow-y: auto;
     border-right: 1px solid #e5e7eb; 
     width: 20%; 
-     background-color: #ffffff; 
+    /* background-color: #ffffff;  */
+    /*  background-color: #ffffff;
+     backdrop-filter: blur(1000px); */ 
+     background: rgba( 215, 202, 202, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
 
 }
 
@@ -89,4 +98,15 @@ body {
     color: #374151; 
     text-decoration: none;
     font-size: 1.125rem; 
+    font-weight: 500;
+    color: #374151;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out, box-shadow 0.2s ease-out;
+    margin: 0.25rem 0.75rem; 
+    border-radius: 9999px; 
+}
+
+.nav-icon {
+    width: 1.5rem; 
+    height: 1.5rem; 
+    margin-right: 0.75rem; 
 }
