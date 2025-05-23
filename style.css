@@ -6,3 +6,24 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+.link-primary {
+    color: #3b82f6; /* text-blue-500 */
+    text-decoration: none;
+}
+.link-primary:hover {
+    text-decoration: underline;
+}
+.link-show-more {
+    color: #3b82f6; /* text-blue-500 */
+    margin-top: 1rem; /* mt-4 */
+    display: block;
+    font-size: 0.875rem; /* text-sm */
+    text-decoration: none;
+}
+.link-show-more:hover {
+    text-decoration: underline;
+}
