@@ -1,3 +1,6 @@
+/* ========== Estilos Gerais ========== */
+
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff; /* bg-white */
@@ -26,4 +29,34 @@ body {
 }
 .link-show-more:hover {
     text-decoration: underline;
+}
+
+/* ========== scrollbar ========== */
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+/* ========== SIDEBAR (ajuste da esquerda navegação) ========== */
+
+.sidebar-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+    border-right: 1px solid #e5e7eb; 
+    width: 20%; 
+     background-color: #ffffff; 
+
 }
