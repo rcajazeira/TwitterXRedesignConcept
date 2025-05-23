@@ -60,3 +60,25 @@ body {
      background-color: #ffffff; 
 
 }
+
+.sidebar-logo-container {
+    padding: 1rem; 
+     
+}
+
+.sidebar-logo {
+    color: #3b82f6; 
+    padding: 0.5rem; 
+
+}
+
+.logo-svg {
+    width: 2rem; 
+    height: 2rem; 
+    fill: currentColor;
+}
+
+.sidebar-nav {
+    margin-top: 0.5rem; 
+}
+
