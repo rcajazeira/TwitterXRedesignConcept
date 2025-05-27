@@ -253,6 +253,18 @@ body {
     border-top: 1px solid #f3f4f6; /* border-t border-gray-100 */
 }
 
+.compose-tweet-icons {
+    display: flex;
+    gap: 0.25rem; /* space-x-1 */
+    color: #3b82f6; /* text-blue-500 */
+}
+.btn.btn-main-post { /* Herda de .btn e .btn-primary */
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem;
+    padding-top: 0.5rem; /* py-2 */
+    padding-bottom: 0.5rem;
+}
+
 
 
 
