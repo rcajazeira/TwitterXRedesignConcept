@@ -173,6 +173,37 @@ body {
     margin-right: 1rem; 
 }
 
+.profile-name {
+    font-weight: 600; /* font-semibold */
+}
+.profile-handle {
+    font-size: 0.875rem; /* text-sm */
+    color: #6b7280; /* text-gray-500 */
+}
+.profile-more-icon {
+    margin-left: auto; /* ml-auto */
+    color: #6b7280; /* text-gray-500 */
+    cursor: pointer;
+}
+
+/* ========== MAIN CONTENT AREA ========== */
+.main-content-container {
+    width: 60%; /* w-3/5 */
+    border-right: 1px solid #e5e7eb; /* border-r border-gray-200 */
+    overflow-y: auto;
+}
+.main-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* bg-white bg-opacity-90 */
+    -webkit-backdrop-filter: blur(8px); /* backdrop-blur-md */
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e5e7eb; /* border-b border-gray-200 */
+    z-index: 10;
+}
+
+
+
 
 
 
