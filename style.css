@@ -399,6 +399,61 @@ body {
     color: rgb(29, 155, 240);
 }
 
+.icon-btn.hover-green:hover, .icon-btn-text.hover-green:hover {
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgb(0, 186, 124);
+}
+.icon-btn.hover-red:hover, .icon-btn-text.hover-red:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgb(249, 24, 128);
+}
+
+
+/* ========== TRENDS SIDEBAR (Right) ========== */
+.trends-sidebar-container {
+    width: 25%; /* w-1/4 */
+    padding: 1.5rem; /* p-6 */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* space-y-6 */
+    background-color: #f9fafb; /* bg-gray-50 */
+    overflow-y: auto;
+}
+.search-bar-container {
+    position: relative;
+}
+.search-icon {
+    position: absolute;
+    left: 0.75rem; /* left-3 */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af; /* text-gray-400 */
+}
+.search-input {
+    width: 100%;
+    background-color: #e5e7eb; /* bg-gray-200 */
+    border-radius: 9999px; /* rounded-full */
+    padding-top: 0.5rem; /* py-2 */
+    padding-bottom: 0.5rem;
+    padding-left: 2.5rem; /* pl-10 */
+    padding-right: 1rem; /* pr-4 */
+    outline: none;
+    border: 2px solid transparent; /* Para o focus state */
+    transition: background-color 0.2s, border-color 0.2s;
+}
+.search-input:focus {
+    border-color: #3b82f6; /* focus:ring-2 focus:ring-blue-500 (simulado com borda) */
+    background-color: white; /* focus:bg-white */
+}
+
+
+.trends-card {
+    background-color: white; /* bg-white */
+    padding: 1rem; /* p-4 */
+    border-radius: 0.75rem; /* rounded-xl */
+    border: 1px solid #e5e7eb; /* border border-gray-200 */
+}
+
 
 
 
