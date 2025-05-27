@@ -490,6 +490,30 @@ body {
     margin-top: 0.125rem;
 }
 
+.trend-more-icon {
+    color: #6b7280; /* text-gray-500 */
+    font-size: 1.125rem; /* text-lg */
+    cursor: pointer;
+}
+
+
+.footer-links {
+    font-size: 0.75rem; /* text-xs */
+    color: #6b7280; /* text-gray-500 */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* space-x-2 (aproximado com gap) */
+    line-height: 1.5;
+}
+
+.footer-links a {
+    color: inherit;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 
 
 
