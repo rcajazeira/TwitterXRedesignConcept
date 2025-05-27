@@ -235,6 +235,24 @@ body {
     width: 100%;
 }
 
+.compose-tweet-textarea {
+    width: 100%;
+    padding: 0.5rem; /* p-2 */
+    font-size: 1.125rem; /* text-lg (pode ser 1.25rem para text-xl) */
+    outline: none;
+    resize: none;
+    border: none; /* Remover borda padrão */
+    min-height: 3rem; /* Altura inicial */
+}
+.compose-tweet-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem; /* mt-2 */
+    padding-top: 0.5rem; /* pt-2 */
+    border-top: 1px solid #f3f4f6; /* border-t border-gray-100 */
+}
+
 
 
 
