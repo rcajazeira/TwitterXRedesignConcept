@@ -367,6 +367,37 @@ body {
     color: #6b7280; /* Cor padrão do ícone, pode ser herdada ou text-gray-500 */
 }
 
+.icon-btn .material-icons {
+    font-size: 1.25rem; /* text-xl */
+    display: block; /* Para centralização e evitar line-height issues */
+}
+.icon-btn-text { /* Para botões com ícone e texto */
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; /* space-x-1 */
+    padding: 0.25rem 0.5rem; /* p-1 (Tailwind, mas talvez um pouco mais para texto) */
+    border-radius: 9999px;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    color: #6b7280;
+    font-size: 0.875rem; /* text-sm (para o texto) */
+}
+.icon-btn-text .material-icons {
+    font-size: 1.125rem; /* Ícone um pouco menor quando com texto */
+}
+
+.icon-btn-text-label {
+    font-size: 0.875rem; /* text-sm */
+}
+
+
+.icon-btn:hover, .icon-btn-text:hover { /* Comportamento padrão de hover */
+    background-color: rgba(29, 155, 240, 0.1); /* Light blue background on hover */
+    color: rgb(29, 155, 240); /* Twitter blue text/icon on hover */
+}
+.icon-btn.hover-blue:hover, .icon-btn-text.hover-blue:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    color: rgb(29, 155, 240);
+}
 
 
 
