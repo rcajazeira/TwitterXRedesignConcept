@@ -475,7 +475,7 @@ body {
 }
 
 
-.trend-item {}
+.trend-item {
 .trend-item-header {
     display: flex;
     justify-content: space-between;
@@ -488,6 +488,7 @@ body {
 .trend-title {
     font-weight: 600; /* font-semibold */
     margin-top: 0.125rem;
+}
 }
 
 .trend-more-icon {
