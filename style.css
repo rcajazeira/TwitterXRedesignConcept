@@ -223,6 +223,18 @@ body {
     border-bottom-color: #3b82f6; /* border-blue-500 */
 }
 
+/* Compose Tweet Section */
+.compose-tweet-container {
+    padding: 1rem; /* p-4 */
+    border-bottom: 1px solid #e5e7eb; /* border-b border-gray-200 */
+}
+.compose-tweet-flex {
+    display: flex;
+}
+.compose-tweet-main {
+    width: 100%;
+}
+
 
 
 
