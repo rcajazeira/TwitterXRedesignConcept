@@ -201,6 +201,28 @@ body {
     border-bottom: 1px solid #e5e7eb; /* border-b border-gray-200 */
     z-index: 10;
 }
+.main-header-tabs {
+    display: flex;
+    justify-content: space-around;
+}
+.header-tab {
+    padding: 1rem; /* py-4 px-4 (px-4 é redundante se space-around já espaça) */
+    text-align: center;
+    color: #6b7280; /* text-gray-500 */
+    font-weight: 600; /* font-semibold */
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+.header-tab:hover {
+    color: #3b82f6; /* hover:text-blue-500 */
+    /* border-bottom-color: rgba(59, 130, 246, 0.5); hover:border-blue-500 (para hover) */
+}
+.header-tab.active {
+    color: #3b82f6; /* text-blue-500 */
+    border-bottom-color: #3b82f6; /* border-blue-500 */
+}
+
 
 
 
