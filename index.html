@@ -2,19 +2,19 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" /> <!-- Certifique-se que este caminho está correto para seu projeto -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
     <title>Twitter X Redesign Concept</title>
-    
-  </head>
+    </head>
+
   <body class="body-styles">
-    <div class="main-container">
+     <div class="main-container">
       <!-- Iniciando Sidebar -->
-       <aside class="sidebar-container">
+       <aside class="sidebar-container custom-scrollbar"> <!-- Adicionada custom-scrollbar aqui e abaixo -->
         <div>
           <div class="sidebar-logo-container">
              <div class="sidebar-logo">
@@ -23,262 +23,258 @@
               </div>
           </div>
           <nav class="sidebar-nav">
-          <a class="nav-link active" href="#"><span class="material-icons nav-icon">home</span> Home</a>
-          <a class="nav-link" href="#"><span class="material-icons nav-icon">search</span> Explore</a>
-          <a class="nav-link" href="#"><span class="material-icons nav-icon">notifications_none</span> Notifications</a>
-          <a class="nav-link" href="#"><span class="material-icons nav-icon">mail_outline</span> Messages</a>
-          <a class="nav-link" href="#"><span class="material-icons nav-icon">bookmark_border</span> Premium</a>
-          <a class="nav-link" href="#"><span class="material-icons nav-icon">list_alt</span> Bookmarks</a>
-          <a class="nav-link" href="#"><span class="material-icons nav-icon">people_outline</span> Communities</a>
-          <a class="nav-link" href="#"><span class="material-icons nav-icon">verified_user</span> Verified Orgs</a>
-          <a class="nav-link" href="#"><span class="material-icons nav-icon">person_outline</span> Profile</a>
-          <a class="nav-link" href="#"><span class="material-icons nav-icon">more_horiz</span> More</a>
+            <a class="nav-link active" href="#"><span class="material-icons nav-icon">home</span> Home</a>
+            <a class="nav-link" href="#"><span class="material-icons nav-icon">search</span> Explore</a>
+            <a class="nav-link" href="#"><span class="material-icons nav-icon">notifications_none</span> Notifications</a>
+            <a class="nav-link" href="#"><span class="material-icons nav-icon">mail_outline</span> Messages</a>
+            <a class="nav-link" href="#"><span class="material-icons nav-icon">bookmark_border</span> Premium</a>
+            <a class="nav-link" href="#"><span class="material-icons nav-icon">list_alt</span> Bookmarks</a>
+            <a class="nav-link" href="#"><span class="material-icons nav-icon">people_outline</span> Communities</a>
+            <a class="nav-link" href="#"><span class="material-icons nav-icon">verified_user</span> Verified Orgs</a>
+            <a class="nav-link" href="#"><span class="material-icons nav-icon">person_outline</span> Profile</a>
+            <a class="nav-link" href="#"><span class="material-icons nav-icon">more_horiz</span> More</a>
         </nav>
          <div class="sidebar-post-button-container">
            <button class="btn btn-primary btn-sidebar-post">Post</button>
          </div>
         </div>
         <div class="sidebar-profile-container">
-          <div class="sidebar-profile">
+          <div class="sidebar-profile"> <!-- Esta div continha apenas a imagem, ajustei para envolver tudo -->
             <img class="profile-avatar-sm"  alt="User Ivo Ivanov" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnzoJnmk9qXHswt5mH6yzKLYekgCWysUGQ2rUpdD2_Cgw6FMniQEnxssdgztv9CPIsdiBH6EXUDZVQAr9LMSJnAWiI_ErIDAbNHA8j2mivUmi4veqSxZWdubX0Y7cz4eVHXB-8dtxS90t-UkGh__njyvSr5gQ4SPFHswJA46ZF23D8de1prDteRgsrbbMXirJ5WdlwRbjQd_3yo3hQRJPNlkrvUr2np3yUzIUjnlYTfAGZr1h4-79v6U7SDIT5BjvzJkcmamITQQ">
+            <div> <!-- Div para agrupar nome e handle -->
+                <p class="profile-name">Gato BafinhodeSardinha</p>
+                <p class="profile-handle">@bafodesardinha</p>
+            </div>
+            <span class="material-icons profile-more-icon">more_horiz</span>
           </div>
-          <div>
-            <p class="profile-name">Gato BafinhodeSardinha</p>
-            <p class="profile-handle">@bafodesardinha</p>
-          </div>
-        <span class="material-icons profile-more-icon">more_horiz</span>
-      </div>
-    </div>
-  </aside>
+        </div>
+    </aside> <!-- Fechamento da sidebar-container -->
+
      <!-- Aqui Main Content -->
-       <main class="main-content-container">
+       <main class="main-content-container custom-scrollbar">
         <header class="main-header">
           <div class="main-header-tabs">
             <a class="header-tab active" href="#">For you</a>
-                    <a class="header-tab" href="#">Following</a>
-                    <a class="header-tab" href="#">SaaS Growth</a>
-                    <a class="header-tab" href="#">AI Startups</a>
-                    <a class="header-tab" href="#">Fintech Startups</a>
-                    <a class="header-tab" href="#">Web 3</a>
-                    <a class="header-tab" href="#">Product Design</a>
-                  </div>
-                </header>
-                <div class="compose-tweet-container">
-                  <div class="compose-tweet-flex">
-                    <img class="profile-avatar-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC2mN-k9n4i5U_h2aRqMPoJClAHcZgdI-f52X0ZZZxWb-6o_7rI0Ju8RCqpqXannFEFQPTNe3xfOGHXSouDmVdLqbklcNbGA9ieZXnxDGyASkSDipHgKuJNK74wcYY7gJO-AaOglE0jYN1jb00vpqohEc1OQXaZbrR7bn7Hoq9QYOgwPz6Wo8rXyRbsY4hWhUz-97Ya15dYEczbQjyOMyH2kpduzG22SCKCuI1uOnG2vcL9LMHwRA_Hl4L5iOANLZWmthOT6mHdw" alt="User Ivo Ivanov">
-                    <div class="compose-tweet-main">
-                      <textarea class="compose-tweet-textarea" placeholder="What is happening?!" rows="1"></textarea>
-                      <div class="compose-tweet-actions">
-                        <div class="compose-tweet-icons">
-                          <button class="icon-btn"><span class="material-icons">image</span></button>
-                          <button class="icon-btn"><span class="material-icons">gif_box</span></button>
-                          <button class="icon-btn"><span class="material-icons">poll</span></button>
-                          <button class="icon-btn"><span class="material-icons">sentiment_satisfied</span></button>
-                          <button class="icon-btn"><span class="material-icons">calendar_today</span></button>
-                          <button class="icon-btn"><span class="material-icons">location_on</span></button>
-                        </div>
-                        <button class="btn btn-primary btn-main-post">Post</button>
-
-                      </div>
-                    </div>
-                  </div>
+            <a class="header-tab" href="#">Following</a>
+            <a class="header-tab" href="#">SaaS Growth</a>
+            <a class="header-tab" href="#">AI Startups</a>
+            <a class="header-tab" href="#">Fintech Startups</a>
+            <a class="header-tab" href="#">Web 3</a>
+            <a class="header-tab" href="#">Product Design</a>
+          </div>
+        </header>
+        <div class="compose-tweet-container">
+          <div class="compose-tweet-flex">
+            <img class="profile-avatar-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC2mN-k9n4i5U_h2aRqMPoJClAHcZgdI-f52X0ZZZxWb-6o_7rI0Ju8RCqpqXannFEFQPTNe3xfOGHXSouDmVdLqbklcNbGA9ieZXnxDGyASkSDipHgKuJNK74wcYY7gJO-AaOglE0jYN1jb00vpqohEc1OQXaZbrR7bn7Hoq9QYOgwPz6Wo8rXyRbsY4hWhUz-97Ya15dYEczbQjyOMyH2kpduzG22SCKCuI1uOnG2vcL9LMHwRA_Hl4L5iOANLZWmthOT6mHdw" alt="User Ivo Ivanov">
+            <div class="compose-tweet-main">
+              <textarea class="compose-tweet-textarea" placeholder="What is happening?!" rows="1"></textarea>
+              <div class="compose-tweet-actions">
+                <div class="compose-tweet-icons">
+                  <button class="icon-btn"><span class="material-icons">image</span></button>
+                  <button class="icon-btn"><span class="material-icons">gif_box</span></button>
+                  <button class="icon-btn"><span class="material-icons">poll</span></button>
+                  <button class="icon-btn"><span class="material-icons">sentiment_satisfied</span></button>
+                  <button class="icon-btn"><span class="material-icons">calendar_today</span></button>
+                  <button class="icon-btn"><span class="material-icons">location_on</span></button>
                 </div>
-                <article class="tweet-card">
-                  <div class="tweet-card-flex">
-                    <img class="profile-avatar-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiMBNxc9qnymKlSjoj4B_5O5qzsxndnpxbQxg8KaVYqHbMXUEKcfDf7bNoP3ztRpuq9Q0MdSSzHmWMaewk_5COYk_v-U8w2h8XLEBAGrgSB4D9_dza2UxBii-jUTkLvhC5QvvvQf_J-4B8QL8g0afuewunGVA9IwN4fFj8sOTeBeIVnt2lMZO4hYEixuMmxK5-CaJ4Whd6hUfebiNqSByUGNZFvbs-uoYosZFhqyNXvC70tWrdXLmZs4FgD0BRDslquLY_gq_3Zg" alt="User Ivo Ivanov">
-                    <div class="tweet-content">
-                      <div class="tweet-author-info">
-                        <span class="tweet-author-name">Ivo Ivanov</span>
-                        <span class="tweet-author-handle">@ivoflip</span>
-                        <span class="tweet-timestamp">· Just now</span>
-                        <span class="material-icons tweet-more-icon">more_horiz</span>
-                      </div>
-                      <p class="tweet-text">Some of the projects I've been working on recently in 10 seconds &#129304;</p>
-                      <p class="tweet-category">Product & Web Design</p>
-                      <div class="tweet-media-container">
-                        <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/06/gatos-pretos.jpg" alt="Design Partner for Startup Founders & Agencies">
-                      </div>
-                      <div class="tweet-actions">
-                        <button class="icon-btn-text hover-blue">
-                                <span class="material-icons">chat_bubble_outline</span>
-                                <span class="icon-btn-text-label">23</span></button>
-
-                        <button class="icon-btn-text hover-green"><span class="material-icons">repeat</span><span class="icon-btn-text-label">1</span></button>
-                         <button class="icon-btn-text hover-red">
-                                <span class="material-icons">favorite_border</span>
-                                <span class="icon-btn-text-label">143</span>
-                            </button>
-                            <button class="icon-btn-text hover-blue">
-                                <span class="material-icons">bar_chart</span>
-                                <span class="icon-btn-text-label">2.34K</span>
-                            </button>
-                            <div class="tweet-actions-right">
-                                <button class="icon-btn hover-blue"><span class="material-icons">bookmark_border</span></button>
-                                <button class="icon-btn hover-blue ml-1"><span class="material-icons">share</span></button>
-
-    </div>
-   </div>
+                <button class="btn btn-primary btn-main-post">Post</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-     </article>
-     <article class="tweet-card">
-   <div class="tweet-card-flex">
-     <img alt="User Adham Dannaway" class="profile-avatar-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNWqFKagRSC0eanYwrVWY6XxRtDjKThGL02oOiqtThqgPt1d0aN6gVaXhSjtQdLRhFH7NMioTSsCCrA7B347brlRBFig72AssUl-pxOFZ74uwj2Cd7NkJyi2zPdjBiS2MjpUOQ5Z6dD8f2S2pYqs1qXoyxnYivY0ZfRE-H6lKVKCa_SW-ye__nIXzdbVUlCgJ7CAXuvnBu7DTSAfMW4_W5aVea_sq9rSynxjyGMLiFRkklflEnBXHQWGKen6CovhtRUW-RHJ0z9w"/>
-    <div class="tweet-content">
-   <div class="tweet-author-info">
-    <span class="tweet-author-name">Adham Dannaway</span>
-    <span class="tweet-author-handle">@AdhamDannaway</span>
-     <span class="tweet-timestamp">· 12m</span>
-     <span class="material-icons tweet-more-icon">more_horiz</span>
-  </div>
- <p class="tweet-text">&#128073; Created this example landing page to test out the <a class="link-primary" href="#">@practicaUI</a> design system.</p>
-    <p class="tweet-text">Works well so far and it really speeds up the design process</p>
-  <p class="tweet-text">Nearly there. Join the waitlist to be notified when the design system is released</p>
-  <div class="tweet-media-container">
-    <img alt="Example landing page design" class="tweet-media-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6zLMxglhFZMLueI_LhBR5JRwitBzD523NWAp7cmbO0ftvvv-wSB3moeOUv63VWj-JT5gaVyg0fwp0SYWBU5mH5j2Bn017kbffbz-FHLA2JHHqauTFZ7UAkETGOxYszSMCkkyzN9SglnGu0EqieOtjv7f5soXStK5a77J-pGMjZ1eOF2YE-QhUo_pmho4qWwRSp7dNWSc2XZnYJBlrxuxdhUb1UZpvrX39EQu1qUHr7icoBtSxj2D-3yoyUVqXFaNezCYXwXK12w"/>
-   </div>
-      <div class="tweet-actions">
-  <button class="icon-btn-text hover-blue">
-  <span class="material-icons">chat_bubble_outline</span>
-   <span class="icon-btn-text-label">12</span>
-       </button>
-    <button class="icon-btn-text hover-green">
- <span class="material-icons">repeat</span>
-      <span class="icon-btn-text-label">5</span>
-    </button>
-        <button class="icon-btn-text hover-red">
-    <span class="material-icons">favorite_border</span>
-    <span class="icon-btn-text-label">88</span>
-   </button>
-  <button class="icon-btn-text hover-blue">
-    <span class="material-icons">bar_chart</span>
-    <span class="icon-btn-text-label">1.5K</span>
- </button>
-  <div class="tweet-actions-right">
-   <button class="icon-btn hover-blue"><span class="material-icons">bookmark_border</span></button>
-    <button class="icon-btn hover-blue ml-1"><span class="material-icons">share</span></button>
-  </div>
-   </div>
- </div>
- </div>
-  </article>
-    </main>
+        <article class="tweet-card">
+          <div class="tweet-card-flex">
+            <img class="profile-avatar-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiMBNxc9qnymKlSjoj4B_5O5qzsxndnpxbQxg8KaVYqHbMXUEKcfDf7bNoP3ztRpuq9Q0MdSSzHmWMaewk_5COYk_v-U8w2h8XLEBAGrgSB4D9_dza2UxBii-jUTkLvhC5QvvvQf_J-4B8QL8g0afuewunGVA9IwN4fFj8sOTeBeIVnt2lMZO4hYEixuMmxK5-CaJ4Whd6hUfebiNqSByUGNZFvbs-uoYosZFhqyNXvC70tWrdXLmZs4FgD0BRDslquLY_gq_3Zg" alt="User Ivo Ivanov">
+            <div class="tweet-content">
+              <div class="tweet-author-info">
+                <span class="tweet-author-name">Ivo Ivanov</span>
+                <span class="tweet-author-handle">@ivoflip</span>
+                <span class="tweet-timestamp">· Just now</span>
+                <span class="material-icons tweet-more-icon">more_horiz</span>
+              </div>
+              <p class="tweet-text">Some of the projects I've been working on recently in 10 seconds 落</p>
+              <p class="tweet-category">Product & Web Design</p>
+              <div class="tweet-media-container">
+                <img class="tweet-media-image" src="https://www.petz.com.br/blog/wp-content/uploads/2020/06/gatos-pretos.jpg" alt="Design Partner for Startup Founders & Agencies">
+              </div>
+              <div class="tweet-actions">
+                <button class="icon-btn-text hover-blue">
+                        <span class="material-icons">chat_bubble_outline</span>
+                        <span class="icon-btn-text-label">23</span></button>
+                <button class="icon-btn-text hover-green"><span class="material-icons">repeat</span><span class="icon-btn-text-label">1</span></button>
+                 <button class="icon-btn-text hover-red">
+                        <span class="material-icons">favorite_border</span>
+                        <span class="icon-btn-text-label">143</span>
+                    </button>
+                    <button class="icon-btn-text hover-blue">
+                        <span class="material-icons">bar_chart</span>
+                        <span class="icon-btn-text-label">2.34K</span>
+                    </button>
+                    <div class="tweet-actions-right">
+                        <button class="icon-btn hover-blue"><span class="material-icons">bookmark_border</span></button>
+                        <button class="icon-btn hover-blue ml-1"><span class="material-icons">share</span></button>
+                    </div>
+                </div>
+            </div>
+          </div>
+         </article>
+         <article class="tweet-card">
+           <div class="tweet-card-flex">
+             <img alt="User Adham Dannaway" class="profile-avatar-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNWqFKagRSC0eanYwrVWY6XxRtDjKThGL02oOiqtThqgPt1d0aN6gVaXhSjtQdLRhFH7NMioTSsCCrA7B347brlRBFig72AssUl-pxOFZ74uwj2Cd7NkJyi2zPdjBiS2MjpUOQ5Z6dD8f2S2pYqs1qXoyxnYivY0ZfRE-H6lKVKCa_SW-ye__nIXzdbVUlCgJ7CAXuvnBu7DTSAfMW4_W5aVea_sq9rSynxjyGMLiFRkklflEnBXHQWGKen6CovhtRUW-RHJ0z9w"/>
+            <div class="tweet-content">
+               <div class="tweet-author-info">
+                <span class="tweet-author-name">Adham Dannaway</span>
+                <span class="tweet-author-handle">@AdhamDannaway</span>
+                 <span class="tweet-timestamp">· 12m</span>
+                 <span class="material-icons tweet-more-icon">more_horiz</span>
+              </div>
+             <p class="tweet-text"> Created this example landing page to test out the <a class="link-primary" href="#">@practicaUI</a> design system.</p>
+                <p class="tweet-text">Works well so far and it really speeds up the design process</p>
+              <p class="tweet-text">Nearly there. Join the waitlist to be notified when the design system is released</p>
+              <div class="tweet-media-container">
+                <img alt="Example landing page design" class="tweet-media-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6zLMxglhFZMLueI_LhBR5JRwitBzD523NWAp7cmbO0ftvvv-wSB3moeOUv63VWj-JT5gaVyg0fwp0SYWBU5mH5j2Bn017kbffbz-FHLA2JHHqauTFZ7UAkETGOxYszSMCkkyzN9SglnGu0EqieOtjv7f5soXStK5a77J-pGMjZ1eOF2YE-QhUo_pmho4qWwRSp7dNWSc2XZnYJBlrxuxdhUb1UZpvrX39EQu1qUHr7icoBtSxj2D-3yoyUVqXFaNezCYXwXK12w"/>
+               </div>
+                  <div class="tweet-actions">
+                      <button class="icon-btn-text hover-blue">
+                      <span class="material-icons">chat_bubble_outline</span>
+                       <span class="icon-btn-text-label">12</span>
+                           </button>
+                        <button class="icon-btn-text hover-green">
+                     <span class="material-icons">repeat</span>
+                          <span class="icon-btn-text-label">5</span>
+                        </button>
+                            <button class="icon-btn-text hover-red">
+                        <span class="material-icons">favorite_border</span>
+                        <span class="icon-btn-text-label">88</span>
+                       </button>
+                      <button class="icon-btn-text hover-blue">
+                        <span class="material-icons">bar_chart</span>
+                        <span class="icon-btn-text-label">1.5K</span>
+                     </button>
+                      <div class="tweet-actions-right">
+                       <button class="icon-btn hover-blue"><span class="material-icons">bookmark_border</span></button>
+                        <button class="icon-btn hover-blue ml-1"><span class="material-icons">share</span></button>
+                      </div>
+                   </div>
+                 </div>
+             </div>
+          </article>
+        </main>
      <!-- Right Trends Sidebar -->
-   <aside class="trends-sidebar-container">
-  <div class="search-bar-container">
-   <span class="material-icons search-icon">search</span>
-   <input class="search-input" placeholder="Search" type="text"/>
-  </div>
- <div class="trends-card">
-      <h2 class="trends-card-title">Who to follow</h2>
-    <div class="follow-list">
-    <div class="follow-item">
-     <div class="follow-item-info">
-     <img alt="User Jane Cooper" class="profile-avatar-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx9jyrDrCCpA6nluyt1fG36LcoDPkVgLZ4ipjEE0MYtVrg2iIhtAIHyTxOrXdiJrHIRf8w_hDmPnJ6XBgOk1Dw1uA7jLniAlLsNV-rCu3nIlIQReYP8cxzoggYd2nFiKYv15-60yS-g2qpgpCqipjvDIHoCbz6FRUHtjZaNXf9X0IAKkkCjnZVSHj80v9ZW87Mgk3vNArgDoCzYhLUwpOPzDFcNrD4wtRM6CdbwgG-1FhJly5ZrtjKFrVcJXOF-1qOVx7xWK87WA"/>
-       <div>
-  <p class="profile-name">Jane Cooper</p>
-      <p class="profile-handle">@janeCooper</p>
-   </div>
-  </div>
-     <button class="btn btn-dark btn-follow">Follow</button>
-     </div>
-  <div class="follow-item">
-    <div class="follow-item-info">
-      <img alt="User Cody Fisher" class="profile-avatar-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgktoLvia5TSrigu7Z99zGyoHE-ljoKSYtj4-Rn2wqwTWXF20YJl1-0jPU9PawPxYcmzmD4voarPgvdn5joRk3vf821aEmpg4VUbw9V8oDXtEQBOFy9-acLzp3zeWvbQ9rb2BJx-jEbR5vbIW6JHfQq1sF1hY5xXYeY_KRqI2ITMSdIp3Ng_WyUemFM8iRQNoZwWgGPkTZKzYL1bGi3g4Z8F_wxJhSDhUI8xSA8ygzT45flAhVCbH-PiTUbaesVpXVsPAe_9vdlw"/>
- <div>
-                                <p class="profile-name">Cody Fisher</p>
-                                <p class="profile-handle">@codyfisher</p>
-                            </div>
-                        </div>
-                        <button class="btn btn-dark btn-follow">Follow</button>
-                    </div>
-                    <div class="follow-item">
-                        <div class="follow-item-info">
-                            <img alt="User Guy Hawkins" class="profile-avatar-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE0m3yxQquiMxd62L4pgqPzUeer5wiv7GpZ_SGFgmIYTjMpvtJhld4rk7r_qB7lYlM8qqf2zGhNEKqpVOERqaXFg77hvX4ck_Ev-FTiuuWeoCtujJ-mRN4QTpXL64W3qaJfqrwnPYr7xOtXGG-ID5dfpzVaF05ZlNIox1nihH1nGUzUfWdC3O2MJwlFDzTEi7fpAWAYt-g9UfhA67H_TraLCdiJs35vqKE1kgV4V7N33Pk4rn6ceLXJ9MlPmA0lYbSPidFZ_voCw"/>
-  <div>
-    <p class="profile-name">Guy Hawkins</p>
-                                <p class="profile-handle">@guyhawkins</p>
-                            </div>
-                        </div>
-                        <button class="btn btn-dark btn-follow">Follow</button>
+       <aside class="trends-sidebar-container custom-scrollbar">
+          <div class="search-bar-container">
+           <span class="material-icons search-icon">search</span>
+           <input class="search-input" placeholder="Search" type="text"/>
+          </div>
+         <div class="trends-card">
+              <h2 class="trends-card-title">Who to follow</h2>
+            <div class="follow-list">
+                <div class="follow-item">
+                 <div class="follow-item-info">
+                 <img alt="User Jane Cooper" class="profile-avatar-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx9jyrDrCCpA6nluyt1fG36LcoDPkVgLZ4ipjEE0MYtVrg2iIhtAIHyTxOrXdiJrHIRf8w_hDmPnJ6XBgOk1Dw1uA7jLniAlLsNV-rCu3nIlIQReYP8cxzoggYd2nFiKYv15-60yS-g2qpgpCqipjvDIHoCbz6FRUHtjZaNXf9X0IAKkkCjnZVSHj80v9ZW87Mgk3vNArgDoCzYhLUwpOPzDFcNrD4wtRM6CdbwgG-1FhJly5ZrtjKFrVcJXOF-1qOVx7xWK87WA"/>
+                   <div>
+                      <p class="profile-name">Jane Cooper</p>
+                      <p class="profile-handle">@janeCooper</p>
+                   </div>
+                  </div>
+                 <button class="btn btn-dark btn-follow">Follow</button>
+                 </div>
+              <div class="follow-item">
+                <div class="follow-item-info">
+                  <img alt="User Cody Fisher" class="profile-avatar-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgktoLvia5TSrigu7Z99zGyoHE-ljoKSYtj4-Rn2wqwTWXF20YJl1-0jPU9PawPxYcmzmD4voarPgvdn5joRk3vf821aEmpg4VUbw9V8oDXtEQBOFy9-acLzp3zeWvbQ9rb2BJx-jEbR5vbIW6JHfQq1sF1hY5xXYeY_KRqI2ITMSdIp3Ng_WyUemFM8iRQNoZwWgGPkTZKzYL1bGi3g4Z8F_wxJhSDhUI8xSA8ygzT45flAhVCbH-PiTUbaesVpXVsPAe_9vdlw"/>
+                    <div>
+                        <p class="profile-name">Cody Fisher</p>
+                        <p class="profile-handle">@codyfisher</p>
                     </div>
                 </div>
-                <a class="link-show-more" href="#">Show more</a>
+                <button class="btn btn-dark btn-follow">Follow</button>
             </div>
-            <div class="trends-card">
-                <h2 class="trends-card-title">Bulgaria trends</h2>
-                <div class="trend-list">
-                    <div class="trend-item">
-                        <div class="trend-item-header">
-                            <span class="trend-category">1 · Sports · Trending</span>
-                            <span class="material-icons trend-more-icon">more_horiz</span>
-                        </div>
-                        <p class="trend-title">Grigor Dimitrov</p>
-                        <p class="trend-posts">45.2K Posts</p>
-                    </div>
-<!-- Repetir .trend-item para outros trends -->
-<div class="trend-item">
-                        <div class="trend-item-header">
-                            <span class="trend-category">2 · Politics · Trending</span>
-                            <span class="material-icons trend-more-icon">more_horiz</span>
-                        </div>
-                        <p class="trend-title">Ukraine</p>
-                        <p class="trend-posts">235K Posts</p>
-                    </div>
-                     <div class="trend-item">
-                        <div class="trend-item-header">
-                            <span class="trend-category">3 · Trending</span>
-                            <span class="material-icons trend-more-icon">more_horiz</span>
-                        </div>
-                        <p class="trend-title">Bulgaria</p>
-                        <p class="trend-posts">86K Posts</p>
-                    </div>
-                    <div class="trend-item">
-                        <div class="trend-item-header">
-                            <span class="trend-category">4 · Politics · Trending</span>
-                            <span class="material-icons trend-more-icon">more_horiz</span>
-                        </div>
-                        <p class="trend-title">Elections</p>
-                        <p class="trend-posts">45.2K Posts</p>
-                    </div>
-                    <div class="trend-item">
-                        <div class="trend-item-header">
-                            <span class="trend-category">5 · Sports · Trending</span>
-                            <span class="material-icons trend-more-icon">more_horiz</span>
-                        </div>
-                        <p class="trend-title">Kobrat Pulev</p>
-                        <p class="trend-posts">37K Posts</p>
-                    </div>
-                    <div class="trend-item">
-                        <div class="trend-item-header">
-                            <span class="trend-category">6 · Technology · Trending</span>
-                            <span class="material-icons trend-more-icon">more_horiz</span>
-                        </div>
-                        <p class="trend-title">ChatGPT</p>
-                        <p class="trend-posts">45.2K Posts</p>
-                    </div>
- <div class="trend-item">
-                        <div class="trend-item-header">
-                            <span class="trend-category">7 · Technology · Trending</span>
-                            <span class="material-icons trend-more-icon">more_horiz</span>
-                        </div>
-                        <p class="trend-title">#DesignSubscription</p>
-                        <p class="trend-posts">45.2K posts</p>
+            <div class="follow-item">
+                <div class="follow-item-info">
+                    <img alt="User Guy Hawkins" class="profile-avatar-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE0m3yxQquiMxd62L4pgqPzUeer5wiv7GpZ_SGFgmIYTjMpvtJhld4rk7r_qB7lYlM8qqf2zGhNEKqpVOERqaXFg77hvX4ck_Ev-FTiuuWeoCtujJ-mRN4QTpXL64W3qaJfqrwnPYr7xOtXGG-ID5dfpzVaF05ZlNIox1nihH1nGUzUfWdC3O2MJwlFDzTEi7fpAWAYt-g9UfhA67H_TraLCdiJs35vqKE1kgV4V7N33Pk4rn6ceLXJ9MlPmA0lYbSPidFZ_voCw"/>
+                      <div>
+                        <p class="profile-name">Guy Hawkins</p>
+                        <p class="profile-handle">@guyhawkins</p>
                     </div>
                 </div>
-                <a class="link-show-more" href="#">Show more</a>
+                <button class="btn btn-dark btn-follow">Follow</button>
             </div>
-            <div class="footer-links">
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Cookie Policy</a>
-                <a href="#">Accessibility</a>
-                <a href="#">Ads info</a>
-                <a href="#">More ···</a>
-                <span>© 2023 X Corp.</span>
-            </div>
-        </aside>
+        </div>
+        <a class="link-show-more" href="#">Show more</a>
     </div>
-  
+    <div class="trends-card">
+        <h2 class="trends-card-title">Bulgaria trends</h2>
+        <div class="trend-list">
+            <div class="trend-item">
+                <div class="trend-item-header">
+                    <span class="trend-category">1 · Sports · Trending</span>
+                    <span class="material-icons trend-more-icon">more_horiz</span>
+                </div>
+                <p class="trend-title">Grigor Dimitrov</p>
+                <p class="trend-posts">45.2K Posts</p>
+            </div>
+            <div class="trend-item">
+                <div class="trend-item-header">
+                    <span class="trend-category">2 · Politics · Trending</span>
+                    <span class="material-icons trend-more-icon">more_horiz</span>
+                </div>
+                <p class="trend-title">Ukraine</p>
+                <p class="trend-posts">235K Posts</p>
+            </div>
+             <div class="trend-item">
+                <div class="trend-item-header">
+                    <span class="trend-category">3 · Trending</span>
+                    <span class="material-icons trend-more-icon">more_horiz</span>
+                </div>
+                <p class="trend-title">Bulgaria</p>
+                <p class="trend-posts">86K Posts</p>
+            </div>
+            <div class="trend-item">
+                <div class="trend-item-header">
+                    <span class="trend-category">4 · Politics · Trending</span>
+                    <span class="material-icons trend-more-icon">more_horiz</span>
+                </div>
+                <p class="trend-title">Elections</p>
+                <p class="trend-posts">45.2K Posts</p>
+            </div>
+            <div class="trend-item">
+                <div class="trend-item-header">
+                    <span class="trend-category">5 · Sports · Trending</span>
+                    <span class="material-icons trend-more-icon">more_horiz</span>
+                </div>
+                <p class="trend-title">Kobrat Pulev</p>
+                <p class="trend-posts">37K Posts</p>
+            </div>
+            <div class="trend-item">
+                <div class="trend-item-header">
+                    <span class="trend-category">6 · Technology · Trending</span>
+                    <span class="material-icons trend-more-icon">more_horiz</span>
+                </div>
+                <p class="trend-title">ChatGPT</p>
+                <p class="trend-posts">45.2K Posts</p>
+            </div>
+             <div class="trend-item">
+                <div class="trend-item-header">
+                    <span class="trend-category">7 · Technology · Trending</span>
+                    <span class="material-icons trend-more-icon">more_horiz</span>
+                </div>
+                <p class="trend-title">#DesignSubscription</p>
+                <p class="trend-posts">45.2K posts</p>
+            </div>
+        </div>
+        <a class="link-show-more" href="#">Show more</a>
+    </div>
+    <div class="footer-links">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Ads info</a>
+        <a href="#">More ···</a>
+        <span>© 2023 X Corp.</span>
+    </div>
+</aside>
+    </div> <!-- Fechamento do .main-container -->
+    <script src="script.js" defer></script>
   </body>
 </html>
